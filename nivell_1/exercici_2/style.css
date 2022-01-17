@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.section {
+    background: #111;
+    max-width: 1200px; 
+    width: 95%;
+    padding: 8px; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 10px;
+    padding: 5px;
+}
+
+.content {
+    padding: 8px;
+    margin: 8px;
+}
+
+
+.w100 {
+    width: 100%;
+}
+
+.flex,
+.section-2,
+.container-1,
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container-1,
+.container-3 {
+    background:rgb(50, 63, 107);
+}
+
+.container-1 .content {
+    background: rgb(219, 68, 68);
+    width: calc(100%/3);
+}
+
+.container-1 .content:nth-child(2),
+.container-3 {
+    width: 70%;
+}
+
+.container-2 {
+    background: rgb(224, 137, 6);
+}
+
+.container-5,
+.container-2 .content,
+.container-4 .content,
+.container-5 .content {
+    background: rgb(245, 242, 65);
+}
+
+.container-3 {
+    flex-direction: column;
+}
+
+.container-3 .w100 .content {
+    background:rgb(40, 79, 219);
+}
+
+.container-3 .content {
+    background:rgb(104, 125, 199);
+}
+
+.container-4 {
+    background: rgb(212, 94, 58);
+    width: 30%;
+}
+
+
+@media (max-width: 768px) {
+    .section-2 {
+        flex-direction: column;
+        background: rgb(245, 242, 65);
+    }
+    .container-3,
+    .container-4 {
+        width: 100%;
+    }
+}
+
+
+
