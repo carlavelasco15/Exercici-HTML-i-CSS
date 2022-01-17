@@ -94,6 +94,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    .container-1,
+    .flex {
+        flex-direction: column;
+    }
+}
     
 
 
